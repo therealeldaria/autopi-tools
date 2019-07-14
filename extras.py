@@ -1,4 +1,4 @@
-# Just some tools to convert 
+# Just some tools to convert
 
 from string import ascii_uppercase
 import itertools
@@ -15,7 +15,7 @@ def find_letter(count):
         count = 3
     for s in itertools.islice(iter_all_strings(), count-2):
         pass
-    print(s)
+    return(s)
 
 
 def find_number(letter):
@@ -23,9 +23,4 @@ def find_number(letter):
     for s in iter_all_strings():
         count += 1
         if s == letter.upper():
-            print(count)
-            break
-
-find_letter(53)
-
-find_number("a")
+            return(count)
